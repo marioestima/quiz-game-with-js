@@ -1,0 +1,85 @@
+:root {
+  --background-color: rgba(0, 0, 0, 0.938);
+  --main-bg-color: #5852522f;
+  --button-bg-color: rgb(83, 189, 83);
+  --button-hover-color: rgb(53, 110, 70);
+  --input-border-color: blue;
+  --font-family: Arial, sans-serif;
+  --font-family-monospace: 'Courier New', Courier, monospace;
+  --font-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--font-color); 
+  margin: 10px;
+}
+
+.main {
+  background-color: var(--main-bg-color);
+  text-align: center;
+  margin: 50px;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+button {
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--button-bg-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--font-color);
+  font-size: 15px;
+  width: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: solid 2px var(--input-border-color);
+  font-size: 20px;
+  width: calc(100% - 22px); 
+}
+
+.question {
+  font-family: var(--font-family-monospace);
+  font-size: 50px;
+  color: var(--font-color);
+}
+
+
+.main {
+  background-color: var(--main-bg-color);
+}
+
+#right_div{
+  background-color: rgba(65, 170, 65, 0.541);
+  text-align: center;
+  margin: 50px;
+  padding: 40px;
+  border-radius: 5px;
+}
+#wrong_div{
+  background-color: rgba(219, 41, 41, 0.582);
+  text-align: center;
+  margin: 50px;
+  padding: 40px;
+  border-radius: 5px;
+
+}
+
