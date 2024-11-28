@@ -50,7 +50,7 @@ let currentQuestionIndex = 0;
 
 let questionContainer = document.getElementById('question-container');
 let questionCard = document.getElementById('question-card-right');
-
+ 
 let responseDiv = document.createElement('div');
 let responseText = document.createElement('h1');
 

@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Quiz</title>
-</head>
-<body id="base">
-    <main id="main" class="main">
-        <section class="question_container">
-            <h1 class="question">Quem é o criador da linguagem Python?</h1>
-        </section>
-        <br>v
-        <form id="quizForm">
-            <label for="answer">Sua resposta:</label>
-            <input id="answer" class="answer" type="text" aria-labelledby="answer">
-            <br><br>
-            <hr>
-            <button type="button" onclick="submitAnswer()">Verificar</button>
-        </form>
-    </main>
-    <script src="script.js"></script>
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>QuizGame</title>
+    </head>
 
-</body>
+    <body>
+
+        <main id="main" class="main">
+            <section class="question_container" id="question-container"></section>
+
+            <div class="questions-div" id="question-div">
+                <div id="question-card-right" onclick="right(this)"><!-- code here --></div>
+                <div class="question-card-wrong" id="one"><!-- code here --></div>
+                <div class="question-card-wrong" id="two"><!-- code here --></div>
+                <div class="question-card-wrong" id="three"><!-- code here --></div>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+
 </html>
